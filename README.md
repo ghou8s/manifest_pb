@@ -82,10 +82,10 @@
 
 ```bash
 # Initialize the latest stable branch
-$ repo init -u git://github.com/PitchBlackRecoveryProject/manifest_pb.git -b android-10.0
+$ repo init -u https://github.com/PitchBlackRecoveryProject/manifest_pb.git -b android-10.0
 
 # Sync the latest stable branch
-$ repo sync
+$ repo sync -j$(nproc --all)
 ```
 
 Follow our omni_device.mk sample
